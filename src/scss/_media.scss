@@ -1,0 +1,273 @@
+@media (max-width: 900px) {
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 14px;
+  }
+  .header {
+    &-burger {
+      display: block;
+    }
+    &-input {
+      display: none;
+    }
+  }
+  .header-dropdown {
+    padding: 0 10px;
+  }
+  .left-sidebar {
+    position: absolute;
+    top: 62px;
+    padding: 20px 20px 20px 5px;
+    transform: translateX(-120%);
+    width: 63%;
+    background-color: #fff;
+    z-index: 50;
+    overflow: hidden;
+    transition: all 1s;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .right-sidebar {
+    flex-basis: 35%;
+    padding: 15px 10px 0;
+    &__box {
+      margin-bottom: 20px;
+      &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &__item {
+      margin-top: 15px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      &-calendar {
+        width: 45px;
+        height: 45px;
+        padding-top: 7px;
+        .day {
+          font-size: 13px;
+        }
+      }
+      &-photo {
+        width: 30px;
+      }
+      &-name {
+        font-size: 12px;
+      }
+    }
+  }
+  .main-content {
+    flex-basis: 63%;
+  }
+  .story-gallery {
+    &__item {
+      img {
+        width: 30px;
+      }
+      &:first-child {
+        img {
+          width: 25px;
+          top: 52%;
+        }
+      }
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+  .post-box {
+    padding: 15px 10px;
+    &__top {
+      &-photo {
+        width: 35px;
+        height: 35px;
+      }
+    }
+    &__content {
+      padding-left: 0;
+      margin-top: 10px;
+      &-textarea {
+        height: 50px;
+        textarea {
+          font-size: 12px;
+          &::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+      &-bottom {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+      &-item {
+        font-size: 12px;
+      }
+    }
+    &__bottom {
+      &-link {
+        .icon {
+          width: 16px;
+          height: 16px;
+        }
+        &__num {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+  .profile-content__user {
+    &-name {
+      font-size: 18px;
+    }
+    &-text {
+      font-size: 13px;
+    }
+    &-btn {
+      font-size: 14px;
+    }
+  }
+  .sidebar-box {
+    padding: 15px 10px;
+    &__item {
+      font-size: 13px;
+      gap: 10px;
+      .icon {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}
+@media (max-width: 650px) {
+  .content-inner {
+    flex-direction: column-reverse;
+  }
+  .right-sidebar {
+    position: static;
+    .event {
+      flex-direction: row;
+      gap: 10px;
+    }
+  }
+  .rightBoxItem {
+    height: 0;
+    overflow: hidden;
+    &.active {
+      height: 100%;
+    }
+  }
+  .profile-content {
+    &-wrap {
+      flex-direction: column;
+      margin-top: 0;
+      gap: 0;
+    }
+    &-sidebar {
+      flex-basis: 100%;
+    }
+    &-main {
+      flex-basis: 100%;
+    }
+  }
+}
+@media (max-width: 530px) {
+  p {
+    font-size: 12px;
+  }
+  body {
+    font-size: 14px;
+  }
+  .header {
+    &-logo {
+      width: 120px;
+      margin-right: 0;
+    }
+    &-items {
+      gap: 15px;
+    }
+    &-link {
+      .icon {
+        width: 19px;
+        height: 18px;
+      }
+    }
+    &-burger {
+      display: block;
+      .icon {
+        width: 19px;
+        height: 18px;
+      }
+    }
+    &-photo {
+      width: 30px;
+    }
+  }
+  .content-inner {
+    flex-direction: column-reverse;
+  }
+  .right-sidebar {
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 50px;
+    }
+    .event {
+      flex-direction: row;
+    }
+  }
+  .profile-content__user {
+    padding: 15px 10px;
+    flex-direction: column;
+    &-left {
+      img {
+        width: 75px;
+      }
+    }
+    &-name {
+      font-size: 16px;
+    }
+    &-text {
+      font-size: 12px;
+      margin: 5px 0 10px;
+    }
+    &-photo {
+      flex-basis: 27px;
+    }
+    &-right {
+      flex-direction: row;
+    }
+    &-btn {
+      font-size: 12px;
+      width: 100px;
+      padding: 8px 5px;
+      .icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 8px;
+      }
+      &.active {
+        font-size: 12px;
+        .icon {
+          width: 15px;
+          height: 15px;
+          margin-right: 8px;
+        }
+      }
+    }
+    &-menu {
+      width: 40px;
+      height: 20px;
+      padding: 2px;
+      .icon {
+        width: 17px;
+        height: 17px;
+      }
+    }
+  }
+}
